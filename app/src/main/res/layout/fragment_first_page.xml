@@ -6,8 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".FirstPageFragment">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="406dp"
+        android:layout_height="392dp"
+        app:contentPadding="4dp"
+        android:layout_margin="4dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_bias="0.448" />
 
-    <TextView
+
+    <EditText
         android:id="@+id/textViewText2"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
@@ -24,7 +37,7 @@
         tools:ignore="HardcodedText,TextViewEdits,UnknownId" />
 
 
-    <TextView
+    <EditText
         android:id="@+id/textViewText"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
@@ -54,15 +67,6 @@
         app:layout_constraintVertical_bias="0.052"
         tools:ignore="HardcodedText,UnknownId" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerview"
-        android:layout_width="347dp"
-        android:layout_height="393dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
-        app:layout_constraintVertical_bias="0.448" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
